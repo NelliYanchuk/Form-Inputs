@@ -9,14 +9,16 @@ function getSentence () {
 }
 
 function getVocals () {
-  let vocal = '';
-  var str = inputTXT.value;
-  for (let char of str) {
-    if (vowels.includes(char) && !vocal.includes(char)) {
-        vocal+=char;
-    }}
-    outputTXT.innerHTML = vocal || 'No vowels in your string';
-}
+    let vocal = [];
+    var str = inputTXT.value;
+    
+    for (let char of str) {
+      if (vowels.includes(char) && !vocal.includes(char)) {
+          vocal.push(char); }
+    }
+    outputTXT.innerHTML = vocal.length > 0 ? vocal.join(',') : 'No vowels in your string'; 
+  }
+  
 
 function searchVocals () {
     let vocal = [];
