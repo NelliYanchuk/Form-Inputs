@@ -17,13 +17,11 @@ function allVocals() {
         }
     }
     if (functionUSE.value === 'searchVocals') {
-        outputTXT.innerHTML =
-            vocal.length > 0 ? JSON.stringify(vocal) : 'No vowels in your string'
+        outputTXT.innerHTML = vocal.length > 0 ? JSON.stringify(vocal) : 'No vowels in your string'
     } else if (functionUSE.value === 'deleteDuplicity') {
         outputTXT.innerHTML = JSON.stringify(vocal)
-    } else if (functionUSE.value === 'getVocals') {
-        outputTXT.innerHTML =
-            vocal.length > 0 ? vocal.join(',') : 'No vowels in your string'
+    } else {
+        outputTXT.innerHTML = vocal.length > 0 ? vocal.join(',') : 'No vowels in your string'
     }
 }
 
