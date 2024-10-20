@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelli Yanchuk | Sample Form Inputs</title>
+    <link rel="stylesheet" href="styles/page-styles.css">
+    <link rel="stylesheet" href="styles/form-element-styles.css">
+</head>
+
+<body>
+    <h1>Form Inputs Homework</h1>
+    <article>
+        <h2>To analyze, type your string below</h2>
+        <label for="tb-string">Test String:</label>
+        <input type="text" id="tb-string" required placeholder="Enter a string up to 30 chars" maxlength="30">
+        
+        <label for="func">Choose a function to use:</label>
+        <select name="function" id="func" required>
+            <option value="getSentence">getSentence</option>
+            <option value="searchVocals">searchVocals</option>
+            <option value="deleteDuplicity">deleteDuplicity</option>
+            <option value="getVocals">getVocals</option>
+        </select>
+
+        <input type="button" id="enter-btn" value="Enter">
+
+        <p class="output">Your result:</p>
+        <p class="output" id="output-box"></p>
+    </article>
+    <script src="scripts/input-form.js" defer></script>
+</body>
+</html>
