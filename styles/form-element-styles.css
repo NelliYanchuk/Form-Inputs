@@ -15,5 +15,5 @@ button:hover, input[type=submit]:hover, input[type=button]:hover {
 }
 
 input[type=text] {
-    font-size: 1.4em;
+    font-size: 1em;
 }
